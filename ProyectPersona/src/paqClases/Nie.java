@@ -39,14 +39,14 @@ public class Nie {
         
         String strDni=nie.substring(0, nie.length()-1);
               
-        
+        /*
         if (nie.length()< 9)
         {
           int longitud=nie.length()-1;                       
           for(int i=longitud; i<7;i++)
              strDni='0'+strDni;      
         }
-         
+         */
         
         
         char letra=nie.charAt(nie.length()-1);
@@ -59,7 +59,7 @@ public class Nie {
         }
         catch(NumberFormatException e)
         {
-            throw new NumberFormatException("Error, el dni no es número");
+            throw new IllegalArgumentException("Error, el dni no es número");
         }
         
         int resto=dni%23;
@@ -74,7 +74,7 @@ public class Nie {
 
     @Override
     public String toString() {
-        return "Nie{" + "nie=" + nie + '}';
+        return "{" + "Nie=" + this.nie + '}';
     }
   
   

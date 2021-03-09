@@ -1,6 +1,5 @@
 
-import paqClases.Nie;
-import paqClases.Nif;
+import paqClases.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -23,19 +22,32 @@ public class ProyectPersona {
      try{   
         nif1=new Nif("1R");
      }
+     /*
      catch(NumberFormatException x)
      {
          System.out.println(x.getMessage());
-     }
+     }*/
      catch(IllegalArgumentException e)
      {
          System.out.println(e.getMessage());
      }
        
-     System.out.println("nif1="+nif1);
-      Nie nie1=new Nie("X0000001R");
+    System.out.println("nif1="+nif1);
+    Nie nie1=new Nie("X0000001R");
     System.out.println("nie1="+nie1);
 
+    
+    Persona paco=new Persona("Francisco",nif1);
+    System.out.println("paco="+paco);
+    
+    Persona raul=new Persona("Raúl",nie1);
+    System.out.println("raul="+raul); 
+
+   // Persona doble=new Persona("Noexiste",paco);
+        
+        
+    
+    
     }
     
    }

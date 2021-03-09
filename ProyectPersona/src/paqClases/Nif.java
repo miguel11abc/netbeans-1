@@ -13,7 +13,7 @@ public class Nif {
    private String nif;
    private final static String Letras="TRWAGMYFPDXBNJZSQVHLCKE";
 
-    public Nif(String nif) throws IllegalArgumentException, NumberFormatException {
+    public Nif(String nif) throws IllegalArgumentException {
         nif=nif.trim().toUpperCase();
         
         if (nif.length() > 9)
@@ -41,7 +41,7 @@ public class Nif {
         }
         catch(NumberFormatException e)
         {
-            throw new NumberFormatException("Error, el dni no es número");
+            throw new IllegalArgumentException("Error, el dni no es número");
         }
         
         int resto=dni%23;
