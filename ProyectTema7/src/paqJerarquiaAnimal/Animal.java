@@ -12,16 +12,16 @@ package paqJerarquiaAnimal;
 public class Animal {
    public void comer()
    {
-       System.out.println("Necesita comer diariamente");
+       System.out.println("Clase: Animal-Necesita comer diariamente");
    }
    
    public void dormir()
    {
-       System.out.println("Dormir es indispensable para descansar");
+       System.out.println("Clase: Animal-Dormir es indispensable para descansar");
    }
    
    public void reproducir()
    {
-       System.out.println("Genera nuevos seres vivos");
+       System.out.println("Clase: Animal-Genera nuevos seres vivos");
    }
 }

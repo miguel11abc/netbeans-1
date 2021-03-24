@@ -3,16 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paqJerarquiaAnimal;
+package proyectherencia;
 
 /**
  *
  * @author Profesor
  */
-public class Mamifero extends Animal{
-    @Override
-    public void reproducir()
-    {
-        System.out.println("Clase: Mamífero-Reproducción vivípara");
+public class ProyectHerencia {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
     }
+    
 }

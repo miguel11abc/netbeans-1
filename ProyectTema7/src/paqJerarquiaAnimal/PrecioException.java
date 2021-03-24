@@ -9,10 +9,14 @@ package paqJerarquiaAnimal;
  *
  * @author Profesor
  */
-public class Mamifero extends Animal{
-    @Override
-    public void reproducir()
-    {
-        System.out.println("Clase: Mamífero-Reproducción vivípara");
+public class PrecioException extends IllegalArgumentException{
+
+    public PrecioException() {
+        super("Error, precio incorrecto");
     }
+
+    public PrecioException(String s) {
+        super(s);
+    }
+    
 }
