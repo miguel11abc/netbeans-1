@@ -20,6 +20,12 @@ public class Teatro {
         this.listaFunciones=new ArrayList();
     }
 
+    public Teatro(String nombre, ArrayList <Funcion> lista)
+    {
+        this.nombre=nombre;
+        this.listaFunciones=lista;
+    }
+    
     public String getNombre() {
         return this.nombre;
     }

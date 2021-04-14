@@ -7,7 +7,7 @@ package javadocprueba;
 
 /**
  *<h2> Esto es un ejemplo de documentación </h2>
- * Puedo añadir etiquetas HTML, para <b> mejorar</b> la presentación.
+ * Puedo añadir etiquetas HTML, para <b>mejorar</b> la presentación.
  * Por ejemplo, una lista de viñetas:
  * <ul> 
  *  <li> Inserción de registros </li>
