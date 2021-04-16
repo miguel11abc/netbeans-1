@@ -35,6 +35,15 @@ public class Ppal {
         toby.ladrar();
         toby.grunir();
         
+        
+        System.out.println("--------GATO------------");
+        Gato pedro=new Gato();
+        pedro.comer(); //pedro come como un gato
+        pedro.dormir(); //pedro duerme como animal
+        pedro.reproducir(); //pedro se reproduce como mamífero
+        pedro.hacerRuido(); //Maulla
+        
+        
         Animal b=new Animal();
         b=ballena;
         
@@ -48,9 +57,32 @@ public class Ppal {
         b.comer();
         b.dormir();
         b.reproducir();
-        //b.ladrar(); b no puede acceder a métodos específicos de Perro
-        //b.grunir();
+        //b.ladrar(); //b no puede acceder a métodos específicos de Perro
+       // b.grunir();
         
+       
+       System.out.println("\n-----CREAMOS UNA CULEBRA(ANIMAL) DE TIPO PERRO");
+       Animal culebra=new Perro();
+       culebra.comer();
+       culebra.dormir();
+       culebra.reproducir();
+      // culebra.ladrar();
+       
+        System.out.println("\n -------LA CULEBRA se transforma en el gato Pedro---");
+        culebra=pedro;
+        culebra.comer();
+        culebra.dormir();
+        culebra.reproducir();
+        ((Gato)culebra).hacerRuido();
+      
+        System.out.println("-----LAGARTO APUNTANDO A UN GATO");
+        Animal lagarto=new Gato();
+        lagarto.comer();
+        lagarto.dormir();
+        lagarto.reproducir();
+        ((Gato)lagarto).hacerRuido();
+        
+      
     }
     
 }
