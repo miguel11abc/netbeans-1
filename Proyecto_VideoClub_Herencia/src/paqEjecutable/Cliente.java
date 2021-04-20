@@ -15,7 +15,7 @@ public class Cliente {
    private int id;
    private static int contClientes=0;
    private String nombre;
-   private ArrayList <Producto> productosAlquilados=new ArrayList();
+   private ArrayList <Producto> productosAlquilados=new ArrayList <Producto>();
 
     public Cliente(String nombre) {
         this.nombre = nombre;
@@ -43,7 +43,7 @@ public class Cliente {
         this.nombre = nombre;
     }
     
-    public void alquilarProducto(Producto pt)
+    public void alquilarProducto(Producto pt) //pt=p  pt=cd pt=j
     {
         if (this.productosAlquilados.contains(pt))
             System.out.println(pt+" está ya alquilado");
@@ -53,7 +53,14 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" + "Id=" + id + " Nombre=" + nombre + '}';
+        String cadena="Cliente{" + "Id=" + id + " Nombre=" + nombre + '}';
+        if (this.productosAlquilados.isEmpty())
+            cadena+="no tiene productos alquilados";
+        else{
+            for(Producto t: this.productosAlquilados)
+                cadena+=t;
+           }
+        return cadena;
     }
    
        
