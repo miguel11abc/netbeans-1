@@ -7,15 +7,15 @@ package paqExcepciones;
 
 /**
  *
- * @author Profesor
+ * @author isabel
  */
-public class CapacidadArrayExcetion extends VideoClubException{
+public class DuracionPeliculaException extends ProductosException{
 
-    public CapacidadArrayExcetion() {
-        System.out.println("Error en el límite de los Arrays");
+    public DuracionPeliculaException() {
+        super("Duración de Película incorrecta");
     }
 
-    public CapacidadArrayExcetion(String s) {
+    public DuracionPeliculaException(String s) {
         super(s);
     }
     

@@ -9,6 +9,14 @@ package paqExcepciones;
  *
  * @author Profesor
  */
-public class NoMasProductosAlquiladosPorCliente extends CapacidadArrayExcetion {
+public class CapacidadArrayException extends VideoClubException{
+
+    public CapacidadArrayException() {
+        super("Error en el límite de los Arrays");
+    }
+
+    public CapacidadArrayException(String s) {
+        super(s);
+    }
     
 }

@@ -7,15 +7,15 @@ package paqExcepciones;
 
 /**
  *
- * @author Profesor
+ * @author isabel
  */
-public class VideoClubException extends IllegalArgumentException{
+public class ProductosException extends VideoClubException {
 
-    public VideoClubException() {
-        super("Error en el VideoClub");
+    public ProductosException() {
+        super("Error en Productos");
     }
 
-    public VideoClubException(String s) {
+    public ProductosException(String s) {
         super(s);
     }
     

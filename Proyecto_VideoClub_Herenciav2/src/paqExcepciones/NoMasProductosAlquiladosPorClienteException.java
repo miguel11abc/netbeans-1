@@ -9,13 +9,13 @@ package paqExcepciones;
  *
  * @author Profesor
  */
-public class VideoClubException extends IllegalArgumentException{
+public class NoMasProductosAlquiladosPorClienteException extends CapacidadArrayException {
 
-    public VideoClubException() {
-        super("Error en el VideoClub");
+    public NoMasProductosAlquiladosPorClienteException() {
+        super("NO más productos alquilados");
     }
 
-    public VideoClubException(String s) {
+    public NoMasProductosAlquiladosPorClienteException(String s) {
         super(s);
     }
     

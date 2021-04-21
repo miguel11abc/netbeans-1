@@ -9,10 +9,10 @@ package paqExcepciones;
  *
  * @author Profesor
  */
-public class NoMasLimiteClientesException extends CapacidadArrayExcetion {
+public class NoMasLimiteClientesException extends CapacidadArrayException {
 
     public NoMasLimiteClientesException() {
-        System.out.println("SE HA CUBIERTO EL LÍMITE MAXIMO DE CLIENTES EN EL VIDEOCLUB");
+        super("SE HA CUBIERTO EL LÍMITE MAXIMO DE CLIENTES EN EL VIDEOCLUB");
     }
 
     public NoMasLimiteClientesException(String s) {

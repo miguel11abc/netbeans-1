@@ -9,10 +9,10 @@ package paqExcepciones;
  *
  * @author Profesor
  */
-public class NoMasLimiteProductosException extends CapacidadArrayExcetion{
+public class NoMasLimiteProductosException extends CapacidadArrayException{
 
     public NoMasLimiteProductosException() {
-        System.out.println("SE HA SUPERADO EL LÍMITE DE PRODUCTOS EN EL VIDEOCLUB");
+        super("SE HA SUPERADO EL LÍMITE DE PRODUCTOS EN EL VIDEOCLUB");
     }
 
     public NoMasLimiteProductosException(String s) {
