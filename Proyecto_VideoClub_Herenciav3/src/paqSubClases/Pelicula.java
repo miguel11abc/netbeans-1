@@ -28,7 +28,7 @@ public class Pelicula extends Producto{
     }
 
     
-    public Pelicula(String idioma, int duracion, String genero, String nombre) throws IdiomaPeliculaException, DuracionPeliculaException {
+    public Pelicula(String idioma, int duracion, String genero, String nombre) throws IdiomaPeliculaException, DuracionPeliculaException, IllegalArgumentException {
         super(nombre);
         idioma=idioma.trim().toUpperCase();
         if (!Pelicula.IDIOMAS.contains(idioma))
@@ -37,7 +37,12 @@ public class Pelicula extends Producto{
         if (duracion <= 0)
             throw new DuracionPeliculaException("Duración Incorrecta");
         this.duracion = duracion;
-        this.genero = GeneroPelis.valueOf(genero);
+        try {
+             this.genero = GeneroPelis.valueOf(genero);
+        }catch(IllegalArgumentException t)
+        {
+            throw new IllegalArgumentException("Error, "+genero+" NO es válido");
+        }
         this.precio=2;
         Pelicula.contPeliculas++;
     }
