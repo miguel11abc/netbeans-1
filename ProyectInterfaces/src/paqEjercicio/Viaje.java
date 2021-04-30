@@ -58,6 +58,15 @@ public class Viaje implements Vendible{
         this.precio = precio;
     }
 
+    @Override
+    public String toString() {
+        return "Viaje{" + "origen=" + origen + ", destino=" + destino + ", ndias=" + ndias + ", precio=" + precio + "Precio con Iva="+this.precioIva()+'}';
+    }
+
+    @Override
+    public double precioIva(){
+        return this.precio+this.precio*Viaje.iva;
+    }
     
     
     

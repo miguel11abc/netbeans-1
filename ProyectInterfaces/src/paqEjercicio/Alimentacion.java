@@ -27,6 +27,6 @@ public class Alimentacion extends Producto{
     
     @Override
     public double precioIva(){
-        return this.precio*Alimentacion.iva;
+        return this.precio+this.precio*Alimentacion.iva;
     }
 }

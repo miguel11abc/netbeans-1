@@ -36,7 +36,7 @@ public abstract class Producto implements Vendible {
 
     @Override
     public String toString() {
-        return "Producto{" + "nombre=" + nombre + ", precio=" + precio + '}';
+        return "Producto{" + "nombre=" + nombre + ", precio=" + precio + " Precio con Iva= "+precioIva() +'}';
     }
     
     

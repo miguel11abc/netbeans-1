@@ -18,6 +18,7 @@ public class Coche implements CallBack{
         this.pitidos = pitidos;
     }
 
+    
     @Override
     public void callback(int n){
         System.out.print("El coche con matrícula "+matricula);
@@ -25,7 +26,7 @@ public class Coche implements CallBack{
         System.out.println("Multa= "+(n*100));
         
     }
-    
+   
     public String getMatricula() {
         return matricula;
     }

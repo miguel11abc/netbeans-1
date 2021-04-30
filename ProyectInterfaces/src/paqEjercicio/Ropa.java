@@ -27,7 +27,7 @@ public class Ropa extends Producto{
     
     @Override
     public double precioIva(){
-        return this.precio*Ropa.iva;
+        return this.precio+this.precio*Ropa.iva;
     }
 
 }
