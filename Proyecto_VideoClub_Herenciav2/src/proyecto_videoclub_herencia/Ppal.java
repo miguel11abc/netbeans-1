@@ -40,7 +40,9 @@ public class Ppal {
         Pelicula p2=new Pelicula("INGLÉS", 45, "Ficcion","The Hobbit");
         Pelicula p3=new Pelicula("INGLÉS",89,"Ficcion","Star Wars III");
         Pelicula p4=new Pelicula("ESPAÑOL",78,"COMEDIA","El discurso del Rey");
-        Pelicula p5=new Pelicula("FRANCÉS", 123,"INFANTIL","Shrek");
+        Pelicula p5=new Pelicula("FRANCÉS", 123,"INFANTIL","Shrek");System.out.println("p5="+p5);
+        
+        /*
         //6
         CD cd1=new CD(6,"ROCK","U2 Boy in 1980");
         CD cd2=new CD(8,"HARD ROCK","Queen Don’t stop now");
@@ -105,7 +107,7 @@ public class Ppal {
         }
         
         System.out.println("Hay en "+v.getNombre()+" "+contP+" películas");
-        */
+        
         //9 ---Mostrar el número de clientes
         System.out.println("En "+v.getNombre()+" hay "+v.numClientes());
         //10
@@ -230,7 +232,7 @@ public class Ppal {
             if (t instanceof Juego)
                 System.out.println("-"+t);
         }
-        
+ */       
 }
 }
  

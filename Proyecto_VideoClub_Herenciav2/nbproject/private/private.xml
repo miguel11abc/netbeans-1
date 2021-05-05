@@ -3,16 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/NoMasLimiteClientesException.java</file>
-            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/IdiomaPeliculaException.java</file>
+            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqSubClases/Pelicula.java</file>
             <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/DuracionCDException.java</file>
             <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/DuracionPeliculaException.java</file>
-            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/NoMasLimiteProductosException.java</file>
-            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/VideoClubException.java</file>
             <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/NoMasProductosAlquiladosPorClienteException.java</file>
-            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/ProductosException.java</file>
             <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/DuracionProductosException.java</file>
             <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/CapacidadArrayException.java</file>
+            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/NoMasLimiteClientesException.java</file>
+            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/IdiomaPeliculaException.java</file>
+            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqEnums/GeneroPelis.java</file>
+            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/NoMasLimiteProductosException.java</file>
+            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/VideoClubException.java</file>
+            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/proyecto_videoclub_herencia/Ppal.java</file>
+            <file>file:/home/isabel/netbeans/Proyecto_VideoClub_Herenciav2/src/paqExcepciones/ProductosException.java</file>
         </group>
     </open-files>
 </project-private>

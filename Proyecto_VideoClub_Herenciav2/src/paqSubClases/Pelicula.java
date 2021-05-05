@@ -6,6 +6,7 @@
 package paqSubClases;
 
 import paqEjecutable.Producto;
+import paqEnums.GeneroPelis;
 
 /**
  *
@@ -15,9 +16,20 @@ public class Pelicula extends Producto{
     protected String idioma;
     protected int duracion;
     protected String genero;
+    protected GeneroPelis genP;
+    protected static String GENEROS=GeneroPelis.concatGenPelis();
     protected static int contPeliculas=0;
     protected final static String IDIOMAS="ESPAÑOLFRANCÉSALEMÁNINGLÉSCHINO";
 
+    
+    public static void concatenaGen()
+    {
+        String generos="";
+        for(GeneroPelis g: GeneroPelis.values())
+            generos+=g.name();
+        GENEROS=generos;
+    }
+    
     public Pelicula(String idioma, int duracion, String genero, String nombre) throws IllegalArgumentException{
         super(nombre);
         idioma=idioma.trim().toUpperCase();
@@ -27,7 +39,13 @@ public class Pelicula extends Producto{
         if (duracion <= 0)
             throw new IllegalArgumentException("Duración Incorrecta");
         this.duracion = duracion;
-        this.genero = genero.trim().toUpperCase();
+        genero = genero.trim().toUpperCase();
+        //concatenaGen();
+        /*
+        if (GENEROS.contains(genero)) this.genP=GeneroPelis.valueOf(genero);
+        System.out.println("genero ="+this.genP);
+        */
+        this.genP=GeneroPelis.valueOf(genero);
         this.precio=2;
         Pelicula.contPeliculas++;
     }
@@ -76,7 +94,7 @@ public class Pelicula extends Producto{
 
     @Override
     public String toString() {
-        return "Pelicula{" +super.toString()+ "Idioma=" + idioma + " Duracion=" + duracion + " Género=" + genero + '}';
+        return "Pelicula{" +super.toString()+ "Idioma=" + idioma + " Duracion=" + duracion + " Género=" + genP + '}';
     }
     
     
