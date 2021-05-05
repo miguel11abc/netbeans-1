@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EntornosDebugger">
+  <ClassDiagramComponents>
+    <Class name="Calculo" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calcularMayor" returnType="int" visibility="public" isStatic="true">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="calcularMenor" returnType="int" visibility="public" isStatic="true">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="calcularFactorial" returnType="long" visibility="public" isStatic="true">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="sumarDivisores" returnType="int" visibility="public" isStatic="true">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="introduceNumero" returnType="int" visibility="public" isStatic="true">
+          <Argument type="Scanner" name="teclado"/>
+          <Argument type="String" name="cadena"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio1" package="" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio1_calculoMayor_Dos_Numeros" package="" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ejercicio2_DividirNumeros" package="" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="num01" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num02" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num03" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num04" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num05" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num06" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num07" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num08" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num09" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num10" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num11" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num12" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num13" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num14" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num15" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num16" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num17" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num18" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num19" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num20" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num21" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num22" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num23" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="num24" type="double" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="resultado" type="double" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="multiplicar" returnType="void" visibility="public" isStatic="true">
+          <Argument type="double" name="numero1"/>
+          <Argument type="double" name="numero2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="id_persona" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getId_persona" returnType="int" visibility="public"/>
+        <Method name="setId_persona" returnType="void" visibility="public">
+          <Argument type="int" name="val"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="val"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
