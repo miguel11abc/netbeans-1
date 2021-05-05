@@ -29,4 +29,9 @@ public class Alimentacion extends Producto{
     public double precioIva(){
         return this.precio+this.precio*Alimentacion.iva;
     }
+    
+    @Override
+    public void advertencia(String s){
+        System.out.println("Método advertencia de interfaceEjemplo "+s);
+    }
 }

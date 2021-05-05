@@ -25,9 +25,15 @@ public class Ropa extends Producto{
         return "Ropa{" +super.toString()+ '}';
     }
     
-    @Override
+    @Override //Vendible
     public double precioIva(){
         return this.precio+this.precio*Ropa.iva;
+    }
+    
+    
+    @Override
+    public void advertencia(String s){
+        System.out.println("Advertencia: "+s);        
     }
 
 }

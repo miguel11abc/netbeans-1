@@ -9,7 +9,7 @@ package paqEjercicio;
  *
  * @author Profesor
  */
-public abstract class Producto implements Vendible {
+public abstract class Producto implements Vendible, interfaceEjemplo {
     protected String nombre;
     protected double precio;
 
