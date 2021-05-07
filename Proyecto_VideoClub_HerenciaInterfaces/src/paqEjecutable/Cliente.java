@@ -84,19 +84,35 @@ public class Cliente {
     //Métodos llamados por VideoClub
     public double obtenerPrecioTotalProductosAlquilados(){
         double total=0.0;
-        for(Producto t: this.productosAlquilados){
-            if (t.isAlquilado())
-                total+=t.getPrecio();
-        }
+       /*
+       for(Producto t: this.productosAlquilados){
+       if (t.isAlquilado())
+       total+=t.getPrecio();
+       }
+        */
+       //SELECT SUM(precio) FROM productosAlquilados WHERE isAlquilado
+       total = this.productosAlquilados.stream() //tabla
+                   .filter((t) -> (t.isAlquilado())) //where
+                   .map((t) -> t.getPrecio())//select precio
+                   .reduce(total, (accumulator, _item) -> accumulator + _item);
         return total;
     }    
     
     public void mostrarGeneroPeliculasAlquiladas(){
         System.out.println("----PELÍCULAS ALQUILADAS POR "+this.nombre+"-----");
+//SELECT genero FROM productosAlquilados WHERE es Pelicula 
+/*
         for(Producto t: this.productosAlquilados){
-            if (t instanceof Pelicula && t.isAlquilado())
+            if (t instanceof Pelicula)
                 System.out.println("-"+((Pelicula)t).getGenero());
-        }            
+        }   
+*/
+//Programación Funcional
+     this.productosAlquilados.stream()
+           .filter(t -> t instanceof Pelicula)
+           .map(t -> ((Pelicula)t).getGenero())
+           .forEach(t -> System.out.println("-"+t));
+             
     }
     
 }

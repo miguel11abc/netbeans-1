@@ -85,7 +85,11 @@ public class Pelicula extends Producto implements Vendible{
     }
 
     public void setGenero(String genero) {
-        this.genero = GeneroPelis.valueOf(genero);
+        try{
+         this.genero = GeneroPelis.valueOf(genero);
+        }catch(IllegalArgumentException e){
+            throw e;
+        } 
     }
 
     @Override

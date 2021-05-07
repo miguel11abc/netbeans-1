@@ -99,9 +99,11 @@ public class Juego extends Producto implements Vendible{
     //Métodos de la interface Vendible
     // public boolean isVendido()
     // public void vender()
+    @Override
     public boolean isVendido(){
         return this.vendido;
     }
+    @Override
     public void vender(double precio){
          if (!this.alquilado && !this.retirado && !this.vendido){
            this.vendido=true;

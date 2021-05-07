@@ -218,8 +218,7 @@ public class Ppal {
         //24 Crea una película p6 que posea las mismas características que p3: 'Star Wars III', evidentemente con otro id.
         Pelicula p6=new Pelicula(p3);
         System.out.println("p6="+p6);
-        
-        
+                
         //25 Se desea tener una lista completa de los productos del videoClub v que esté organizada por tipo
         // de producto, es decir, que aparezcan en primer lugar toda la información de Películas, después de
         // CD y en último lugar los Juegos

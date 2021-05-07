@@ -41,10 +41,10 @@ public class Principal {
         System.out.println("comp"+comp);
         
         System.out.println("DISTINTOS GÉNEROS:");
-        for(GeneroPelis p:GeneroPelis.values())
+        for(GeneroPelis p: GeneroPelis.values())
             System.out.println("-"+p);
         
-        GeneroPelis g3=GeneroPelis.valueOf("INFANTIL");
+        GeneroPelis g3=GeneroPelis.valueOf("INFANTIL");        
         System.out.println("g3= "+g3);
         GeneroPelis g4=GeneroPelis.INFANTIL;
         System.out.println("g4="+g4);
@@ -64,14 +64,14 @@ public class Principal {
             p=new Pelicula("ESPAÑOL",45,"INFANTILo","PETER PAN");
             System.out.println("Película p="+p);
         }        
-        catch(IdiomaPeliculaException c){
+        catch(IdiomaPeliculaException  | DuracionPeliculaException c){
            p=new Pelicula("INGLÉS",120,"INFANTIL","PETER PAN"); 
-            System.out.println("p corregido con IDIOMA INGLÉS "+p);
+           System.out.println("p corregido con IDIOMA INGLÉS "+p);
         }
-        catch(DuracionPeliculaException c){
+        /*catch(DuracionPeliculaException c){
            p=new Pelicula("ESPAÑOL",120,"INFANTIL","PETER PAN"); 
             System.out.println("p corregido con la duración "+p);
-        }
+        }*/
         catch(IllegalArgumentException tp){
             System.out.println(tp.getMessage());
         }

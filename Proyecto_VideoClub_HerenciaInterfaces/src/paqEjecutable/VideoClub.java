@@ -140,7 +140,7 @@ public class VideoClub {
     //de un idioma determinado.
     public void mostrarDuracionPeliculasIdioma(String idioma){        
         System.out.println("-------PELÍCULAS en :"+idioma+"-------");
-        //SELECT * FROM this.listaProductos WHERE producto es Pelicula and Pelicula.idioma=idioma
+        //SELECT duracion FROM this.listaProductos WHERE producto es Pelicula and Pelicula.idioma=idioma
         for(Producto t: this.listaProductos )
         {
             if (t instanceof Pelicula && ((Pelicula)t).getIdioma().equals(idioma)){
