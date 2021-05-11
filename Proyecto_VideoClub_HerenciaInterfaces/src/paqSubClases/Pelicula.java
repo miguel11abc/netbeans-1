@@ -59,11 +59,11 @@ public class Pelicula extends Producto implements Vendible{
     }
 
     public GeneroPelis getGenero() {
-        return genero;
+        return this.genero;
     }
 
     public static int getContPeliculas() {
-        return contPeliculas;
+        return Pelicula.contPeliculas;
     }
 
     @Override
@@ -116,6 +116,12 @@ public class Pelicula extends Producto implements Vendible{
        }
        else System.out.println(this+" ya está retirada, por lo que, no se puede retirar");
 
+    }
+    //El método añadido de Alquilable que se ha declarado 
+    // como default, ahora se redefine
+    @Override
+    public void nuevometodo(){
+        System.out.println("Método de Alquilable que ahora está redefinido");
     }
 
     //Métodos de la interface Retirable     

@@ -62,6 +62,9 @@ public abstract class Producto implements Alquilable, Retirable{
         System.out.println(this.id+" devuelto");
     }
     
+    public static void soyEstatico(){
+        System.out.println("soy el método soyEstatico en Producto");
+    }
     //Métodos de la interface Retirable
     @Override
     public void retirar(){
