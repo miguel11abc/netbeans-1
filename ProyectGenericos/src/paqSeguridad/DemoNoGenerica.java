@@ -22,10 +22,11 @@ public class DemoNoGenerica {
         
         NoGenerica n=new NoGenerica(7);
         System.out.println(n);
-        System.out.println(n.getObjeto());
+        int v=(Integer)n.getObjeto();
+        System.out.println((Integer)n.getObjeto());
         
-        
-        
+        n=str;
+        System.out.println("n= "+n);
     }
     
 }

@@ -27,7 +27,9 @@ public class Generica2Tipos<T,V> {
 
     @Override
     public String toString() {
-        return "{" + "objeto1=" + objeto1 + ", objeto2=" + objeto2 + '}';
+        String cad1=objeto1.getClass().getName();
+        String cad2=objeto2.getClass().getName();
+        return "{" + "objeto1=" + objeto1 + " Tipo= "+cad1+ " Objeto2=" + objeto2 + " Tipo= "+cad2+'}';
     }
     
     

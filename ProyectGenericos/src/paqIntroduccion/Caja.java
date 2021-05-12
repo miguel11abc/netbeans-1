@@ -10,7 +10,7 @@ package paqIntroduccion;
  * @author Profesor
  */
 public class Caja {
-    private int altura, anchura,profundidad;
+    private int altura,anchura,profundidad;
     public Caja(int alto, int ancho, int profundo){
         this.altura=alto;
         this.anchura=ancho;
@@ -43,6 +43,6 @@ public class Caja {
     
     @Override
     public String toString(){
-      return this.altura+" "+this.anchura+" "+this.profundidad;
+      return this.altura+","+this.anchura+","+this.profundidad;
     }
 }

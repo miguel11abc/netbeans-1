@@ -14,7 +14,7 @@ public class DemoIntroduccion {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {               
         Generica<String> str=new Generica<>("Ruben");
         String v=str.getObjeto();
         System.out.println("v= "+v);
@@ -23,13 +23,18 @@ public class DemoIntroduccion {
         Generica<Integer> n=new Generica<Integer>(34);
         System.out.println(n.getObjeto());
         System.out.println("n= "+n);
+        Generica<Integer> m=new Generica<Integer>(33);
+        Generica<Integer> k=new Generica<Integer>(37);
+        
         
       //  str=n; No se pueden referenciar porque son de distinto tipo
         
         Caja cajita=new Caja(6,6,6);
-        Generica<Caja> genCaja=new Generica<Caja>(cajita);
-        System.out.println(genCaja.getObjeto());
-        System.out.println("genCaja= "+genCaja);      
+        Generica<Caja> genCaja=new Generica(cajita);
+        Caja c=genCaja.getObjeto();
+        System.out.println(c);
+        System.out.println("genCaja= "+genCaja);         
+        
     }
     
 }
